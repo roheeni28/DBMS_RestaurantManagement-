@@ -1,0 +1,428 @@
+<!-- 
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+
+<title>MENU</title>
+<link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body class="container-fluid card" style="width: 40rem;">
+	<h1 class="abg-danger text-white text-center">MENU</h1>
+
+
+	<form action="view_menu" method="post">
+		<table class="table table-hover">
+
+			<tr>
+				<td>BEVERAGES</td>
+				<td><a href="beverages.html">BEVERAGES</a></td>
+			</tr>
+
+			<tr>
+				<td>SNACKS</td>
+				<td><a href="Snacks.html">SNACKS</a></td>
+			</tr>
+
+			<tr>
+				<td>MAIN COURSE</td>
+				<td><a href="Main_Course.html">MAIN COURSE</a></td>
+			</tr>
+
+			<tr>
+				<td>ROTI</td>
+				<td><a href="Roti.html">ROTI</a></td>
+			</tr>
+
+			<tr>
+				<td>RICE</td>
+				<td><a href="Rice.html">RICE</a></td>
+			</tr>
+
+			<tr>
+				<td>DESSERTS</td>
+				<td><a href="desserts.html">DESSERTS</a></td>
+			</tr>
+
+			<tr>
+				<td>VIEW ORDERS</td>
+				<td><input type="submit" value="VIEW ORDERS" name="c"></td>
+			</tr>
+
+			<tr>
+				<td>PROCEED TO PAY</td>
+				<td><a href=PaymentType.html>PROCEED TO PAY</a>
+			</tr>
+
+		</table>
+
+	</form>
+</body>
+</html>
+
+ -->
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login Page</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+        
+     	<!-- Favicons -->
+	  <link href="assets/img/favicon.png" rel="icon">
+	  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+	
+	  <!-- Google Fonts -->
+	  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+	
+	  <!-- Vendor CSS Files -->
+	  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+	  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+	  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+	  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+	  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+	  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+	
+	  <!-- Template Main CSS File -->
+	  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    
+    <!-- ======= Menu Section ======= -->
+    <section id="menu" class="menu section-bg">
+    <form action="view_menu" method="post">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Menu</h2>
+          <p>Check Our Tasty Menu</p>
+        </div>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-12 d-flex">
+            <ul>
+              <li> <a href="menu.html">ALL</a></li>
+              <li> <a href="beverages.html">BEVERAGES</a></li>
+              <li><a href="Snacks.html">SNACKS</a></li>
+              <li><a href="Roti.html">ROTI</a></li>
+              <li> <a href="Rice.html">RICE</a></li>
+              <li><a href="desserts.html">DESSERTS</a></li>
+              <li><a href="Main_Course.html">MAIN COURSE</a></li>
+            </ul>
+          </div>
+        </div>
+
+				<tr>
+					<td><input type="submit" value="VIEW ORDERS" name="c"></td>
+				</tr>
+
+				<tr>
+					<td><a href="PaymentType.html"><input type="button" value="PROCEED TO PAY"></a></td>
+				</tr>
+
+				<div class="row" data-aos="fade-up" data-aos-delay="100">
+					<div class="col-lg-12 d-flex justify-content-center">
+						<ul id="menu-flters">
+							<li data-filter="*" class="filter-active">ALL</a></li>
+							<li data-filter=".filter-beverages">BEVERAGES</a></li>
+							<li data-filter=".filter-snacks">SNACKS</a></li>
+							<li data-filter=".filter-roti">ROTI</a></li>
+							<li data-filter=".filter-rice">RICE</a></li>
+							<li data-filter=".filter-desserts">DESSERTS</a></li>
+							<li data-filter=".filter-maincourse">MAIN COURSE</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="row menu-container" data-aos="fade-up"
+					data-aos-delay="200">
+
+					<div class="col-lg-6 menu-item filter-snacks">
+						<img
+							src="https://www.shutterstock.com/image-photo/vegetable-jumbo-grilled-sandwich-served-260nw-1710014800.jpg"
+							class="menu-img" alt="" style="width: 70px; height: 70px;">
+						<div class="menu-content">
+							<a href="#">Veg Sandwhich</a><span>Rs.80</span>
+						</div>
+						<div class="menu-ingredients">Bread, Butter, Tomato, Onion,
+							Cucumber</div>
+					</div>
+
+					<div class="col-lg-6 menu-item filter-snacks">
+						<img src="https://media.istockphoto.com/id/1398144537/photo/curd-samosa-chaat.jpg?s=612x612&w=0&k=20&c=TXAOhd3V-Ad2TnYmKzz2ZBdOvSERy4XVvb0DXucpItw=" class="menu-img" alt="" style="width:70px; height:70px;">
+						<div class="menu-content">
+							<a href="#">Chat Samosa</a><span>Rs.50</span>
+						</div>
+						<div class="menu-ingredients">Boiled potatoes, Onion, Green
+							chillies,Green chillies, Mint chutney</div>
+					</div>
+
+					<div class="col-lg-6 menu-item filter-snacks">
+						<img src="https://vistaramagazine.com/wp-content/uploads/2022/05/01-3.jpg" class="menu-img" alt="" style="width:70px; height:70px;">
+						<div class="menu-content">
+							<a href="#">Masala Dosa</a><span>Rs.80</span>
+						</div>
+						<div class="menu-ingredients">potatoes, Butter, Tomato,
+							Onion, mustard & cumin seeds</div>
+					</div>
+
+					<div class="col-lg-6 menu-item filter-snacks">
+						<img src="https://media.istockphoto.com/id/980049442/photo/stuffed-paneer-paratha-with-melting-butter-served-with-fresh-cottage-cheese-cubes-and-tomato.jpg?s=612x612&w=0&k=20&c=44IJMPhvdInR4r3JDhHoLsQ3AtF49tnHvnA2eUDz8CQ=" class="menu-img" alt="" style="width:70px; height:70px;">
+						<div class="menu-content">
+							<a href="#">Paneer Paratha</a><span>Rs.90</span>
+						</div>
+						<div class="menu-ingredients">wheat flour, Paneer, Ghee or
+							oil, coriander,</div>
+					</div>
+
+					<div class="col-lg-6 menu-item filter-snacks">
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSK029aQF-WVI85oMO19AzynfnQcwwzz5klNUEptQb4vA&usqp=CAU&ec=48600113" class="menu-img" alt="" style="width:70px; height:70px;">
+						<div class="menu-content">
+							<a href="#">Momos</a><span>Rs.100</span>
+						</div>
+						<div class="menu-ingredients">rice flour, Ground meat,
+							Vegetables, Seasonings</div>
+					</div>
+
+					<div class="col-lg-6 menu-item filter-maincourse">
+						<img src="https://www.cubesnjuliennes.com/wp-content/uploads/2019/11/Paneer-Butter-Masala-Recipe-1.jpg" class="menu-img" alt="" style="width:70px; height:70px;">
+						<div class="menu-content">
+							<a href="#">Paneer Butter Masala</a><span>Rs.280</span>
+						</div>
+						<div class="menu-ingredients">Paneer, Butter, Tomato, Cream,
+							Spices</div>
+					</div>
+
+					<div class="col-lg-6 menu-item filter-maincourse">
+						<img src="https://cdn.tarladalal.com/members/9306/big/big_vegetable_bhuna_masala-16452.jpg" class="menu-img" alt="" style="width:70px; height:70px;">
+						<div class="menu-content">
+							<a href="#">Veg Bhoona</a><span>Rs.300</span>
+						</div>
+						<div class="menu-ingredients">Mixed Vegetables, Onion,
+							Tomato, Spices</div>
+					</div>
+
+					<div class="col-lg-6 menu-item filter-maincourse">
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZbN6WhUHztm8tvMYYalGL6ANWN_Zx-5LyoXVHmI-S7A&usqp=CAU&ec=48600113" class="menu-img" alt="" style="width:70px; height:70px;">
+						<div class="menu-content">
+							<a href="#">Shev Bhaji</a><span>Rs.260</span>
+						</div>
+						<div class="menu-ingredients">Gram Flour Noodles, Potatoes,
+							Onion, Tomato, Spices</div>
+					</div>
+
+					<div class="col-lg-6 menu-item filter-maincourse">
+						<img src="https://www.cubesnjuliennes.com/wp-content/uploads/2020/03/Best-Kadai-Paneer-Recipe.jpg" class="menu-img" alt="" style="width:70px; height:70px;">
+						<div class="menu-content">
+							<a href="#">Kadai Paneer</a><span>Rs.290</span>
+						</div>
+						<div class="menu-ingredients">Paneer, Bell Peppers, Onion,
+							Tomato, Spices</div>
+					</div>
+
+					<div class="col-lg-6 menu-item filter-maincourse">
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3e0gp2T-d_NPZn79ddhIJaHkFOyV4fjlv37e7v4Oi9A&usqp=CAU&ec=48600113" class="menu-img" alt="" style="width:70px; height:70px;">
+						<div class="menu-content">
+							<a href="#">Veg Kolhapuri</a><span>Rs.200</span>
+						</div>
+						<div class="menu-ingredients">Mixed Vegetables, Coconut,
+							Onion, Tomato, Spices</div>
+					</div>
+
+					<div class="col-lg-6 menu-item filter-maincourse">
+						<img src="https://img.freepik.com/premium-photo/indian-dhal-spicy-curry-bowl-spices-herbs-rustic-black-wooden-background_2829-4749.jpg" class="menu-img" alt="" style="width:70px; height:70px;">
+						<div class="menu-content">
+							<a href="#">Dal Tadka</a><span>Rs.150</span>
+						</div>
+						<div class="menu-ingredients">Yellow Lentils, Onion, Tomato,
+							Cumin, Spices</div>
+					</div>
+
+					<div class="col-lg-6 menu-item filter-maincourse">
+						<img src="https://thumbs.dreamstime.com/b/dal-makhani-dark-background-traditional-indian-cuisine-puree-dish-urad-beans-red-butter-spices-cream-156960449.jpg" class="menu-img" alt="" style="width:70px; height:70px;">
+						<div class="menu-content">
+							<a href="#">Dal Makhani</a><span>Rs.200</span>
+						</div>
+						<div class="menu-ingredients">Black Lentils, Red Kidney
+							Beans, Butter, Cream, Spices</div>
+					</div>
+
+					<div class="col-lg-6 menu-item filter-rice">
+						<img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2022/12/jeera-rice-cumin-rice.jpg" class="menu-img" alt="" style="width:70px; height:70px;">
+						<div class="menu-content">
+							<a href="#">Jeera Rice</a><span>Rs.150</span>
+						</div>
+						<div class="menu-ingredients">Basmati rice, cumin seeds,
+							spices</div>
+					</div>
+
+					<div class="col-lg-6 menu-item filter-rice">
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoiDGyJurVyQplXFeu3BWlLNYJ2awlmvVpQnm1BhDxrA&usqp=CAU&ec=48600113" class="menu-img" alt="" style="width:70px; height:70px;">
+						<div class="menu-content">
+							<a href="#">Masala Khichadi</a><span>Rs.210</span>
+						</div>
+						<div class="menu-ingredients">Rice, moong dal, spices,
+							vegetables</div>
+					</div>
+
+					<div class="col-lg-6 menu-item filter-rice">
+						<img src="https://geekrobocook.com/wp-content/uploads/2021/01/39_Vegetable-Pulav.jpg" class="menu-img" alt="" style="width:70px; height:70px;">
+						<div class="menu-content">
+							<a href="#">Veg Pulav</a><span>Rs.160</span>
+						</div>
+						<div class="menu-ingredients">Basmati rice, mixed
+							vegetables, spices</div>
+					</div>
+
+					<div class="col-lg-6 menu-item filter-roti">
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5yy7B48p8CeX15vvSggKqfcvPnvHsKaRuV7N0X-YuAA&usqp=CAU&ec=48600113" class="menu-img" alt="" style="width:70px; height:70px;">
+						<div class="menu-content">
+							<a href="#">Butter Roti</a><span>Rs.40</span>
+						</div>
+						<div class="menu-ingredients">Wheat flour, butter, salt</div>
+					</div>
+
+					<div class="col-lg-6 menu-item filter-roti">
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCWidnchOA1ZKRAu4bVdUPaWBTcvBhHDwXVO9P0_-UBw&usqp=CAU&ec=48600113" class="menu-img" alt="" style="width:70px; height:70px;">
+						<div class="menu-content">
+							<a href="#">Garlic Nan</a><span>Rs.50</span>
+						</div>
+						<div class="menu-ingredients">Wheat flour, garlic, butter,
+							salt</div>
+					</div>
+
+					<div class="col-lg-6 menu-item filter-desserts">
+						<img src="https://media.istockphoto.com/id/521803129/photo/gulab-jamun-11.jpg?s=612x612&w=0&k=20&c=wyJaXY7Uu0hMBCXkcTDRaujSKN6Rp9roJeKDvF6CfHI=" class="menu-img" alt="" style="width:70px; height:70px;">
+						<div class="menu-content">
+							<a href="#">Gulab Jam</a><span>Rs.50</span>
+						</div>
+						<div class="menu-ingredients">Flour, Sugar, Rose Water,
+							Cardamom</div>
+					</div>
+
+					<div class="col-lg-6 menu-item filter-desserts">
+						<img src="https://media.istockphoto.com/id/1266242555/photo/homemade-chocolate-brownie-on-a-rustic-wooden-table.jpg?b=1&s=170667a&w=0&k=20&c=WOc9J08VTI9j49-hMjG64Vzs_NqkMMky-joR_VFKetk=" class="menu-img" alt="" style="width:70px; height:70px;">
+						<div class="menu-content">
+							<a href="#">Brownie</a><span>Rs.150</span>
+						</div>
+						<div class="menu-ingredients">Flour, Sugar, Butter,
+							Chocolate, Eggs</div>
+					</div>
+
+					<div class="col-lg-6 menu-item filter-desserts">
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5hAbxaQUEv8ptXGnAp67YGF5WU0dg4ZiiOsMU1Y_PEQ&usqp=CAU&e" class="menu-img" alt="" style="width:70px; height:70px;">
+						<div class="menu-content">
+							<a href="#">Fruit custard</a><span>Rs.100</span>
+						</div>
+						<div class="menu-ingredients">Custard powder, Milk, Mixed
+							Fruits</div>
+					</div>
+
+					<div class="col-lg-6 menu-item filter-desserts">
+						<img src="https://images.unsplash.com/photo-1554520735-0a6b8b6ce8b7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cGFuY2FrZXxlbnwwfHwwfHw%3D&w=1000&q=80" class="menu-img" alt="" style="width:70px; height:70px;">
+						<div class="menu-content">
+							<a href="#">Pan Cake</a><span>Rs.180</span>
+						</div>
+						<div class="menu-ingredients">Flour, Sugar, Milk, Eggs,
+							Baking Powder, Butter</div>
+					</div>
+
+					<div class="col-lg-6 menu-item filter-desserts">
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNbbV5pENp-8idRnMRYAiWq6rsqilTn1u6UKEtuY2b2g&usqp=CAU&ec=48600113" class="menu-img" alt="" style="width:70px; height:70px;">
+						<div class="menu-content">
+							<a href="#">Chocolate icecream</a><span>Rs.80</span>
+						</div>
+						<div class="menu-ingredients">Cream, Milk, Sugar, Chocolate
+						</div>
+					</div>
+
+					<div class="col-lg-6 menu-item filter-beverages">
+						<img src="https://image.shutterstock.com/image-photo/ice-coffee-tall-glass-cream-260nw-1402629113.jpg" class="menu-img" alt="" style="width:70px; height:70px;">
+						<div class="menu-content">
+							<a href="#">Cold Coffee</a><span>Rs.60</span>
+						</div>
+					</div>
+
+					<div class="col-lg-6 menu-item filter-beverages">
+						<img src="https://c4.wallpaperflare.com/wallpaper/914/642/414/food-hot-chocolate-chocolate-cinnamon-wallpaper-preview.jpg" class="menu-img" alt="" style="width:70px; height:70px;">
+						<div class="menu-content">
+							<a href="#">Hot Chocolate</a><span>Rs.70</span>
+						</div>
+					</div>
+
+					<div class="col-lg-6 menu-item filter-beverages">
+						<img src="https://wallpaperaccess.com/full/1558848.jpg" class="menu-img" alt="" style="width:70px; height:70px;">
+						<div class="menu-content">
+							<a href="#">Tea</a><span>Rs.30</span>
+						</div>
+					</div>
+
+					<div class="col-lg-6 menu-item filter-beverages">
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbNUebgK0-c36IsbIBZoqBrZX32FsTPqD_6j3UztVm3g&usqp=CAU&ec=48600113" class="menu-img" alt="" style="width:70px; height:70px;">
+						<div class="menu-content">
+							<a href="#">Hot Coffee</a><span>Rs.60</span>
+						</div>
+					</div>
+
+					<div class="col-lg-6 menu-item filter-beverages">
+						<img src="https://media.istockphoto.com/id/1167319827/photo/mango-juice-in-mason-jars.jpg?b=1&s=170667a&w=0&k=20&c=tffK-D9Hd2onUuXp41keGt8LnEJLjMYFdT4H4CgAx-o=" class="menu-img" alt="" style="width:70px; height:70px;">
+						<div class="menu-content">
+							<a href="#">Mango Juice</a><span>Rs.80</span>
+						</div>
+					</div>
+
+					<div class="col-lg-6 menu-item filter-beverages">
+						<img src="https://www.sugarandsoul.co/wp-content/uploads/2021/04/chocolate-milkshake-2.jpg" class="menu-img" alt="" style="width:70px; height:70px;">
+						<div class="menu-content">
+							<a href="#">Chocolate Milkshake</a><span>Rs.100</span>
+						</div>
+					</div>
+
+					<div class="col-lg-6 menu-item filter-beverages">
+						<img src="https://th.bing.com/th/id/OIP.I8bwJmDmX-vrYj_6DIQsoAAAAA?pid=ImgDet&rs=1" class="menu-img" alt="" style="width:70px; height:70px;">
+						<div class="menu-content">
+							<a href="#">Cad B</a><span>Rs.150</span>
+						</div>
+					</div>
+      </div></div></form>
+    </section><!-- End Menu Section -->
+    
+    
+    <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+    
+
+</body>
+	</html>
+ 

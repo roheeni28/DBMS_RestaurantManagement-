@@ -1,0 +1,223 @@
+<!-- 
+
+<link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body class="container-fluid card" style="width: 40rem;">
+	<h1 class="bg-danger text-white text-center">FOODIE MOODIE
+		RESTAURANT!!</h1>
+
+	<form action="reservation" method="post">
+
+		<table class="table table-hover">
+
+			<tr>
+				<td>CUSTOMER ID</td>
+				<td><input type="text" name="id"></td>
+			<tr>
+				<td>No Of Guest</td>
+				<td><input type="text" name="no"></td>
+			</tr>
+			<tr>
+				<td>DATE</td>
+				<td><select name="date">
+
+						<option value="2023-05-10">2023-05-10</option>
+						<option value="2023-05-11">2023-05-11</option>
+						<option value="2023-05-12">2023-05-12</option>
+
+				</select></td>
+			</tr>
+
+			<tr>
+				<td>TIME</td>
+				<td><select name="time">
+
+						<option value="11:00:00">11:00:00</option>
+						<option value="13:00:00">13:00:00</option>
+						<option value="15:00:00">15:00:00</option>
+						<option value="17:00:00">17:00:00</option>
+						<option value="19:00:00">19:00:00</option>
+						<option value="21:00:00">21:00:00</option>
+
+				</select></td>
+
+			</tr>
+
+			<tr>
+				<td><input type="submit" value="SEARCH FOR AVAILABLE SLOTS"	name="b"></td>
+
+			</tr>
+			<tr>
+				<td><input type="submit" value="RESERVE" name="b"></td>
+
+				<td><input type="submit" value="DELETE" name="b"></td>
+			</tr>
+
+		</table>
+	</form>
+
+</body>
+</html>
+
+ -->
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Reserve Table</title>
+
+
+<!-- Bootstrap CSS -->
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+	crossorigin="anonymous">
+<script
+	src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+	integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+	crossorigin="anonymous"></script>
+
+<!-- Favicons -->
+<link href="assets/img/favicon.png" rel="icon">
+<link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+<!-- Google Fonts -->
+<link
+	href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+	rel="stylesheet">
+
+<!-- Vendor CSS Files -->
+<link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+<link href="assets/vendor/aos/aos.css" rel="stylesheet">
+<link href="assets/vendor/bootstrap/css/bootstrap.min.css"
+	rel="stylesheet">
+<link href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+	rel="stylesheet">
+<link href="assets/vendor/boxicons/css/boxicons.min.css"
+	rel="stylesheet">
+<link href="assets/vendor/glightbox/css/glightbox.min.css"
+	rel="stylesheet">
+<link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+<!-- Template Main CSS File -->
+<link href="assets/css/style.css" rel="stylesheet">
+
+
+<style>
+body {
+	background-color: #9A616D;
+	color: #ffffff;
+}
+
+.btns {
+	margin-top: 30px;
+}
+</style>
+
+</head>
+
+<body>
+
+	<!-- ======= Book A Table Section ======= -->
+	<section id="book-a-table" class="book-a-table">
+	<form action="reservation" method="post">
+		<div class="container" data-aos="fade-up">
+
+			<div class="section-title">
+				<h2>Reservation</h2>
+				<p>Book a Table</p>
+			</div>
+
+			<div class="col-lg-6 col-md-6 form-group">
+				<input type="text" name="id" class="form-control" id="id"
+					placeholder="Customer ID">
+					<br>
+			</div>
+			<br>
+
+			<div class="col-lg-6 col-md-6 form-group">
+				<input type="text" class="form-control" name="no"
+					id="no_of_people" placeholder="No. of people">
+				<br>
+			</div>
+
+			<div class="col-lg-6 col-md-6 form-group">
+				<label for="date">Date:</label> 
+				<select class="form-control" name="date" id="date">
+					<option value="2023-05-10">May 10, 2023</option>
+					<option value="2023-05-11">May 11, 2023</option>
+					<option value="2023-05-12">May 12, 2023</option>
+				</select>
+				<br>
+			</div>
+
+			<div class="col-lg-6 col-md-6 form-group">
+				<label for="time">Time:</label> 
+				<select class="form-control" name="time" id="time">
+					<option value="11:00:00">11:00 AM</option>
+					<option value="13:00:00">1:00 PM</option>
+					<option value="15:00:00">3:00 PM</option>
+					<option value="17:00:00">5:00 PM</option>
+					<option value="19:00:00">7:00 PM</option>
+					<option value="21:00:00">9:00 PM</option>
+				</select>
+			</div>
+			<br>
+		</div>
+
+			<center>
+			<div class="btns">
+				<div class="d-flex mb-3">
+					<input type="submit" class="btn btn-outline-dark"
+						value="SEARCH FOR AVAILABLE SLOTS" name="b"> <a
+						href="menu.html" class="btn-menu animated fadeInUp scrollto"></a>
+				</div> </center>
+
+				<center>
+				<div class="mb-3">
+					<input type="submit" class="btn btn-dark" value="RESERVE" name="b">
+					<a href="Reserve.html" class="btn-book animated fadeInUp scrollto"></a>
+				</div>
+
+				<div class="mb-3">
+					<input type="submit" class="btn btn-dark" value="DELETE" name="b">
+					<a href="Reserve.html" class="btn-book animated fadeInUp scrollto"></a>
+				</div> </center>
+				
+			</div>
+			
+
+
+		</form>
+
+		</div>
+	</section>
+	<!-- End Book A Table Section -->
+
+	<!-- Vendor JS Files -->
+	<script src="assets/vendor/aos/aos.js"></script>
+	<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+	<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+	<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+	<script src="assets/vendor/php-email-form/validate.js"></script>
+
+	<!-- Template Main JS File -->
+	<script src="assets/js/main.js"></script>
+
+</body>

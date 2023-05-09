@@ -1,0 +1,172 @@
+<!-- 
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body class="container-fluid card" style="width: 40rem;">
+	<h1 class="bg-danger text-white text-center">FOODIE MOODIE RESTAURANT!!</h1>
+
+	<form action="rice" method="post">
+
+		<table class="table table-hover">
+			
+			<tr>
+				<td>MENU NAME</td>
+				<td><select name="r_name">
+
+						<option value="JEERA RICE">JEERA RICE</option>
+						<option value="MASALA KHICHADI">MASALA KHICHADI</option>
+						<option value="VEG PULAV">VEG PULAV</option>
+				
+				</select></td>
+			</tr>
+
+			<tr>
+				<tr>
+				<td>Quantity</td>
+				<td><input type="text" name="quantity"></td>
+			</tr>
+
+			<tr>
+				<td><input type="submit" value="ADD ITEM" name="b"></td>
+				<td><input type="submit" value="UPDATE ITEM" name="b"></td>
+			</tr>
+
+			<tr>
+				<td><input type="submit" value="DELETE ORDER" name="b"></td>
+				<td><a href="menu.html">VIEW MENU</a>
+			</tr>
+			
+		</table>
+	</form>
+
+</body>
+</html>
+
+
+ -->
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Foodie Moodie Restaurant</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <style>
+      body {
+        background-color: #9A616D;
+        color: #ffffff;
+      }
+      .dropdown-menu {
+        background-color: #1e1e1e;
+      }
+      .btn-primary {
+        background-color: #c2185b;
+        border-color: #c2185b;
+      }
+      .btn-primary:hover {
+        background-color: #9c1049;
+        border-color: #9c1049;
+      }
+      .btn-secondary {
+        background-color: #4a4a4a;
+        border-color: #4a4a4a;
+      }
+      .btn-secondary:hover {
+        background-color: #333333;
+        border-color: #333333;
+      }
+      .table-dark th, .table-dark td {
+        background-color: #1e1e1e;
+        border-color: #333333;
+      }
+      .table-dark th {
+        color: #ffffff;
+      }
+      .table-dark tbody+tbody {
+        border-top-color: #333333;
+      }
+      .navbar-dark .navbar-nav .nav-link {
+        color: #ffffff;
+      }
+      .navbar-dark .navbar-nav .nav-link:hover {
+        color: #c2185b;
+      }
+    </style>
+  </head>
+  
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Foodie Moodie Restaurant</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="menu.html">Menu</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container my-5">
+      <form action="rice" method="post">
+        <div class="form-group" >
+          <label for="menuName">Menu Name</label>
+          <select class="form-control" id="menuName" name="r_name">
+            <option value="JEERA RICE">JEERA RICE</option>
+			<option value="MASALA KHICHADI">MASALA KHICHADI</option>
+			<option value="VEG PULAV">VEG PULAV</option>
+            <br>
+            <!-- Add other menu items here -->
+          </select>
+          <br>
+          
+          <tr>
+				<tr>
+				<td>Quantity</td> <br>
+				<td><input type="text" name="quantity"></td>
+		  </tr>
+          
+        </div>
+        <button type="submit" class="btn btn-primary mr-2" value="ADD ITEM" name="b">Add Item</button>
+        <button type="submit" class="btn btn-secondary mr-2" value="DELETE ORDER" name="b">Delete Item</button>
+        <button type="submit" class="btn btn-secondary mr-2" value="UPDATE ITEM" name="b">Update Item</button>
+        <a href="menu.html" class="btn btn-secondary">View Menu</a>
+      </form>
+      
+      <!-- <table class="table table-dark mt-5">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Item</th>
+            <th input type="text" scope="col" name="quantity">Quantity</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Populate table with order items here -- >
+        </tbody>
+      </table>  -->
+    </div>
+    <!-- jQuery and Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	
+	  </body>
+	</html>
+	

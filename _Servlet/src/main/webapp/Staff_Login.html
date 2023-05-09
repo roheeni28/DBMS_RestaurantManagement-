@@ -1,0 +1,104 @@
+<!-- 
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Staff Login</title>
+<link rel="stylesheet" href="css/bootstrap.css">
+</head>
+
+<body class="container-fluid card" style="width: 40rem;">
+	<h1 class="bg-danger text-white text-center">FOODIE MOODIE RESTAURANT!!</h1>
+
+
+	<form action="staff" method="post">
+
+		<table class="table table-hover">
+			<tr>
+				<td>Staff ID</td>
+				<td><input type="text" name="id"></td>
+			</tr>
+			<tr>
+				<td>Password</td>
+				<td><input type="password" name="pass"></td>
+			</tr>
+
+			<tr>
+				<td><input type="submit" value="Submit"></td>
+			</tr>
+		</table>
+	</form>
+
+</body>
+</html>
+ -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Staff Login</title>
+<link rel="stylesheet" href="css/bootstrap.css">
+<style>
+.btn-color {
+	background-color: #0e1c36;
+	color: #fff;
+}
+
+.profile-image-pic {
+	height: 200px;
+	width: 200px;
+	object-fit: cover;
+}
+
+.cardbody-color {
+	background-color: #ebf2fa;
+}
+
+a {
+	text-decoration: none;
+}
+</style>
+</head>
+
+<body>
+	<form action="staff" method="post">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 offset-md-3">
+					<h2 class="text-center text-dark mt-5">Login Form</h2>
+					<div class="card my-5">
+
+						<div class="card-body cardbody-color p-lg-5">
+
+							<div class="text-center">
+								<img
+									src="https://cdn.pixabay.com/photo/2016/03/31/19/56/avatar-1295397__340.png"
+									class="img-fluid profile-image-pic img-thumbnail rounded-circle my-3"
+									width="200px" alt="profile">
+							</div>
+
+							<div class="mb-3">
+								<input type="text" class="form-control" id="Username" name="id"
+									aria-describedby="emailHelp" placeholder="Staff ID">
+							</div>
+							<div class="mb-3">
+								<input type="password" class="form-control" id="Password"
+									name="pass" placeholder="password">
+							</div>
+							<div class="text-center">
+								<button type="submit" class="btn btn-color px-5 mb-5 w-100">Login</button>
+							</div>
+							<div id="emailHelp" class="form-text text-center mb-5 text-dark">
+								Not Registered? <a href="#" class="text-dark fw-bold">
+									Create an Account</a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</form>
+</body>
+</html>

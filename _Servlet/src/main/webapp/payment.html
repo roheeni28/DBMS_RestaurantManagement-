@@ -1,0 +1,166 @@
+<!-- 
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body class="container-fluid card" style="width: 40rem;">
+	<h1 class="bg-danger text-white text-center">FOODIE MOODIE RESTAURANT!!</h1>
+
+	<form action="payment" method="post">
+
+		<table class="table table-hover">
+			<tr>
+				<td>Customer ID</td>
+				<td><input type="text" name="id"></td>
+			</tr>
+			<tr>
+				<td>Cutomer Name</td>
+				<td><input type="text" name="name"></td>
+			</tr>
+			
+			<tr>
+				<td>Customer Ph no</td>
+				<td><input type="text" maxlength="10" minlength="10" name="no"></td>
+			</tr>
+			
+			<tr>
+			<td>Customer Arrival Time</td>
+			<td>
+			
+			<tr>
+			<td>Order Type</td>
+			<td>ONLINE<input type="radio" value="ONLINE"name="type"></td>
+			<td>None<input type="radio" value="NONE" name="type"></td>
+			</tr>
+			
+			<tr>
+			<td>ADDRESS</td>
+			<td><textarea rows="5" cols="30" name="address"></textarea>
+			</tr>
+
+			<tr>
+				<td><input type="submit" value="PAY" name="z"></td>
+			</tr>
+		</table>
+	</form>
+
+</body>
+</html>
+
+ -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Payment Page</title>
+<!-- Bootstrap CSS -->
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+	crossorigin="anonymous">
+
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css">
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js">
+<link
+	href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+<link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+<link
+	href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap">
+<!-- Template Main CSS File -->
+<link href="assets/css/style1.css" rel="stylesheet">
+
+</head>
+
+
+<body>
+	<form action="payment" method="post">
+		<div class="container p-0">
+			<div class="card px-4">
+				<p class="h8 py-3">Payment Details</p>
+				<div class="row gx-3">
+					<div class="col-12">
+						<div class="d-flex flex-column">
+							<p class="text mb-1">Customer ID</p>
+							<input type="text" name="id" class="form-control mb-3"
+								placeholder="ID">
+						</div>
+					</div>
+
+					<div class="col-12">
+						<div class="d-flex flex-column">
+							<p class="text mb-1">Customer Name</p>
+							<input type="text" name="name" class="form-control mb-3"
+								placeholder="Name">
+						</div>
+					</div>
+
+					<div class="col-12">
+						<div class="d-flex flex-column">
+							<p class="text mb-1">Customer Phone No.</p>
+							<input type="text" maxlength="10" minlength="10" name="no"
+								class="form-control mb-3" placeholder="Phone No.">
+						</div>
+					</div>
+
+					<tr>
+						<td>Customer Arrival Time</td>
+						<td><br>
+					<tr>
+						<td>Order Type</td>
+						<td>
+							<div class="form-check">
+								<input type="radio" value="ONLINE"name="type" class="form-check-input"> 
+								<label class="form-check-label" for="type-online"> ONLINE </label>
+							</div>
+						</td>
+						<td>
+							<div class="form-check">
+								<input type="radio" value="NONE" name="type" class="form-check-input"> <label
+									class="form-check-label" for="type-none"> None </label>
+							</div>
+						</td>
+					</tr>
+
+
+					<div class="col-12">
+						<div class="d-flex flex-column">
+							<p class="text mb-1">Address</p>
+							<input type="text" textarea rows="5" cols="30" name="address" class="form-control mb-3" placeholder="Address">
+						</div>
+					</div>
+					
+					<div class="col-8" justify-content-center>
+						<div class="d-flex flex-column">
+							<p class="text mb-1"></p>
+							<input input type="submit" value="PAY" name="z"
+								class="form-control mb-3">
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</form>
+</body>
+</html>

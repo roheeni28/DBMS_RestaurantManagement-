@@ -1,0 +1,207 @@
+<!-- 
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body class="container-fluid card" style="width: 40rem;">
+	<h1 class="bg-danger text-white text-center">FOODIE MOODIE
+		RESTAURANT!!</h1>
+
+	<form action="r_table_payment" method="post">
+
+		<table class="table table-hover">
+			<tr>
+				<td>Customer ID</td>
+				<td><input type="text" name="id"></td>
+			</tr>
+
+			<tr>
+				<td>Cutomer Name</td>
+				<td><input type="text" name="name"></td>
+			</tr>
+
+			<tr>
+				<td>Table Number</td>
+				<td><input type="text" name="t_no"></td>
+			</tr>
+
+			<tr>
+				<td>DATE</td>
+				<td><select name="date">
+
+						<option value="2023-05-10">2023-05-10</option>
+						<option value="2023-05-11">2023-05-11</option>
+						<option value="2023-05-12">2023-05-12</option>
+
+				</select></td>
+			</tr>
+
+			<tr>
+				<td>ARRIVAL TIME</td>
+				<td><select name="a_time">
+
+						<option value="11:00:00">11:00:00</option>
+						<option value="13:00:00">13:00:00</option>
+						<option value="15:00:00">15:00:00</option>
+						<option value="17:00:00">17:00:00</option>
+						<option value="19:00:00">19:00:00</option>
+						<option value="21:00:00">21:00:00</option>
+
+				</select></td>
+
+			</tr>
+
+			<tr>
+				<td>Customer Ph no</td>
+				<td><input type="text" maxlength="10" minlength="10" name="no">
+			</td>
+			</tr><tr>
+				<td>Order Type</td>
+				<td>Reserved Table<input type="radio" value="Reserved Table"
+					name="type"></td>
+			</tr>
+
+			<tr>
+				<td><input type="submit" value="PAY" name="z"></td>
+			</tr>
+		</table>
+	</form>
+
+</body>
+</html>
+
+
+ -->
+ 
+ 
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Foodie Moodie Restaurant - Table Reservation</title>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css">
+	<!-- Custom CSS -->
+	<style>
+	body {
+		background-color: #9A616D;
+	}
+	h1 {
+		background-color: #D62828;
+		color: white;
+		padding: 1rem;
+		margin-bottom: 2rem;
+	}
+	form {
+		background-color: white;
+		padding: 2rem;
+		border-radius: 1rem;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+		max-width: 40rem;
+		margin: 0 auto;
+	}
+	form input[type="text"],
+	form select {
+		border-radius: 0.5rem;
+		padding: 0.5rem 1rem;
+		border: none;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		margin-bottom: 1rem;
+	}
+	form input[type="submit"] {
+		background-color: #9A616D;
+		color: white;
+		border: none;
+		padding: 0.5rem 1rem;
+		border-radius: 0.5rem;
+		transition: all 0.3s ease;
+		cursor: pointer;
+	}
+	form input[type="submit"]:hover {
+		background-color: #B81C1C;
+	}
+</style>
+</head>
+
+<body class="container-fluid card" style="width: 50rem;">
+	<h2 class="bg-danger text-white text-center py-4 mb-5">FOODIE MOODIE!!</h2>
+
+	<div class="row justify-content-center">
+		<div class="col-md-8">
+			<form action="r_table_payment" method="post">
+
+				<table class="table table-hover">
+
+					<tr>
+						<td><label for="id">Customer ID</label></td>
+						<td><input type="text" id="id" name="id" class="form-control"></td>
+					</tr>
+
+					<tr>
+						<td><label for="name">Cutomer Name</label></td>
+						<td><input type="text" id="name" name="name" class="form-control"></td>
+					</tr>
+
+					<tr>
+						<td><label for="t_no">Table Number</label></td>
+						<td><input type="text" id="t_no" name="t_no" class="form-control"></td>
+					</tr>
+
+					<tr>
+						<td><label for="date">Date</label></td>
+						<td>
+							<select name="date" id="date" class="form-control">
+								<option value="2023-05-10">2023-05-10</option>
+								<option value="2023-05-11">2023-05-11</option>
+								<option value="2023-05-12">2023-05-12</option>
+							</select>
+						</td>
+					</tr>
+
+					<tr>
+						<td><label for="a_time">Arrival Time</label></td>
+						<td>
+							<select name="a_time" id="a_time" class="form-control">
+								<option value="11:00:00">11:00:00</option>
+								<option value="13:00:00">13:00:00</option>
+								<option value="15:00:00">15:00:00</option>
+								<option value="17:00:00">17:00:00</option>
+								<option value="19:00:00">19:00:00</option>
+								<option value="21:00:00">21:00:00</option>
+							</select>
+						</td>
+					</tr>
+
+					<tr>
+						<td><label for="no">Customer Phone Number</label></td>
+						<td><input type="text" id="no" name="no" class="form-control" maxlength="10" minlength="10"></td>
+					</tr>
+
+					<tr>
+						<td><label>Order Type</label></td>
+						<td>
+							<div class="form-check">
+								<input class="form-check-input" type="radio" value="Reserved Table" id="reserved-table" name="type">
+								<label class="form-check-label" for="reserved-table">Reserved Table</label>
+							</div>
+						</td>
+					</tr>
+
+					<tr>
+						<td colspan="2" class="text-center">
+							<input type="submit" value="PAY" name="z" class="btn btn-danger">
+						</td>
+					</tr>
+				</table>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
+			
+ 

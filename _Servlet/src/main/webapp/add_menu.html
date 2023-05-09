@@ -1,0 +1,141 @@
+<!-- 
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+
+<title>MENU</title>
+<link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body class="container-fluid card" style="width:40rem;">
+<h1 class="abg-danger text-white text-center">MENU</h1>
+
+
+<form action="add_menu" method="post">
+<table class="table table-hover">
+<tr>
+<td>Menu ID</td>
+<td><input type="text" name="id"></td>
+</tr>
+
+<tr>
+<td>Menu Name</td>
+<td><input type="text" name="name"></td>
+</tr>
+
+<tr>
+<td>Menu Type</td>
+<td><input type="text" name="type"></td>
+</tr>
+
+<tr>
+<td>Menu Cost</td>
+<td><input type="text" name="cost"></td>
+</tr>
+
+<tr>
+<td><input type="submit" value="ADD ITEM" name="x"></td>
+<td><input type="submit" value="VIEW MENU" name="x"></td>
+<td><input type="submit" value="UPDATE MENU" name="x"></td>
+<td><input type="submit" value="DELETE MENU ITEM" name="x"></td>
+</tr>
+</table>
+
+
+</form>
+</body>
+</html>
+
+ -->
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>MENU</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <style>
+    /* Custom styles */
+    body {
+      background-color: #f7f7f7;
+    }
+    h1 {
+      background-color: #dc3545;
+      color: #fff;
+      padding: 1rem;
+    }
+    form {
+      padding: 1rem;
+    }
+    table {
+      margin-top: 2rem;
+    }
+    input[type="text"] {
+      border: 1px solid #ced4da;
+      padding: 0.5rem;
+      width: 100%;
+    }
+    input[type="submit"] {
+      background-color: #dc3545;
+      border: none;
+      color: #fff;
+      cursor: pointer;
+      margin-right: 0.5rem;
+      padding: 0.5rem;
+    }
+    input[type="submit"]:hover {
+      background-color: #c82333;
+    }
+    a{
+    	color: white;
+    	background-color: #c82333;
+    	margin-right: 0.5rem;
+        padding: 0.5rem;
+        width: 100%;
+        border: 1px solid #ced4da;
+    }
+  </style>
+</head>
+<body>
+  <div class="container-fluid">
+    <h1 class="text-center">MENU</h1>
+    <form action="add_menu" method="post">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="menu-id">Menu ID</label>
+            <input type="text" name="id" id="menu-id" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="menu-name">Menu Name</label>
+            <input type="text" name="name" id="menu-name" class="form-control">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="menu-type">Menu Type</label>
+            <input type="text" name="type" id="menu-type" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="menu-cost">Menu Cost</label>
+            <input type="text" name="cost" id="menu-cost" class="form-control"> 
+          </div>
+        </div>
+      </div>
+     
+      <div class="text-center">
+       <br> <br>
+        <input type="submit" value="ADD ITEM" name="x">
+        <input type="submit" value="VIEW MENU" name="x">
+        <input type="submit" value="UPDATE MENU" name="x">
+        <input type="submit" value="DELETE MENU ITEM" name="x">
+        <a href=Home.html>HOME</a>
+      </div>
+    </form>
+    
+  </div>
+</body>
+</html>
